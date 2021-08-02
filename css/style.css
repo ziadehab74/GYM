@@ -136,7 +136,7 @@ a {
     color: #fff;
 }
 
-#showcase .showcase-content {
+ .showcase-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,7 +247,7 @@ a {
 }
 
 .contact-us,
-.map
+.map-z
   {
  flex: 1;
 }
@@ -262,9 +262,4 @@ a {
 }
 .form-group{
     display: flex;
-   
-
-}
-.contact-us .form-group input[type="text"]{
-    margin-right: 0.75rem;
 }
