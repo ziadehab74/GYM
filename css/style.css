@@ -1,84 +1,142 @@
 /*ropoto font*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*main style*/
-html,body{
+html,
+body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
-a{
-  text-decoration: none;  
+
+a {
+    text-decoration: none;
 }
+
 /*utility classes*/
-.container{
+.container {
     max-width: 80%;
     margin: auto;
 }
-.bg-dark{
+
+.bg-dark {
     background-color: #252A34;
     color: white;
 }
-.text-primary{
-    color: #ff2e63; ;
+
+.bg-light {
+    background-color: #EAEAEA;
+    color: #252A34;
 }
 
-.text-center{
+.bg-primary {
+    background-color: #08d9d6;
+    color: #fff;
+}
+
+.text-primary {
+    color: #ff2e63;
+    ;
+}
+
+.text-center {
     text-align: center;
 }
-.l-heading{
+
+.l-heading {
     padding: 2rem 10rem;
     font-size: 3rem;
     text-transform: uppercase;
 }
-    .py-1{
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.py-1 {
     padding: 1.5rem 0;
 }
-.btn{
+
+.p-1 {
+    padding: 1.5rem;
+
+}
+
+.btn {
     background-color: #08d9d6;
     color: #fff;
-    padding: 0.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
 }
+.btn-dark{
+    background-color: #252A34;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #ff2e63;
+}
+
+.box-shadow {
+    box-shadow: 0 0 2px #252A34;
+}
+
+.lead {
+    font-size: 1.6rem;
+}
+
 /*section navbar*/
 #navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-position: sticky;
-top: 0;
-z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
-#navbar.logo{
+
+.logo {
     padding: 1rem;
 }
-#navbar.logo img{
+
+.logo img {
     width: 80px;
 
 }
-#navbar ul{
+
+#navbar ul {
     list-style: none;
     display: flex;
 
 }
-#navbar ul li a{
+
+#navbar ul li a {
     color: #fff;
     padding: 1rem;
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
     background-color: #08d9d6;
     border-radius: 5px;
 }
+
 /*showcase*/
-#showcase{
+#showcase {
     background: #252A34 url(../img/showcase.jpg) no-repeat center center/cover;
     height: 100vh;
     color: #fff;
 }
-#showcase .showcase-content{
+
+#showcase .showcase-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,6 +144,127 @@ z-index: 1;
     height: 100%;
     padding: 1rem;
 
-/*overlay*/
+    /*overlay*/
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*about*/
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.about-content div,
+.about-content img {
+    flex: 1;
+}
+
+.about-content img {
+    width: 50%;
+    margin-left: 1.5rem;
+    border: 5px solid #fff;
+}
+
+/*section CTA*/
+#cta {
+    background: url(../img/cta.jpg) no-repeat center center/cover;
+    color: #fff;
+}
+
+.cta-content {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6rem;
+    overflow: hidden;
+}
+
+/*section :programs*/
+.programs {
+    color: #252A34;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+.box {
+    flex: 1;
+    padding: 1rem;
+}
+
+.box img {
+    width: 70px;
+    background-color: #08d9d6;
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+
+/*section : trainers*/
+.trainers-boxes {
+    display: flex;
+}
+
+.trainers-boxes .trainers-box {
+    background-color: #fff;
+    flex: 1;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.trainers-boxes .trainers-box img {
+    display: block;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.trainers-boxes .trainers-box ul {
+    display: flex;
+    list-style: none;
+}
+
+.trainers-boxes .trainers-box ul li {
+    color: #252A34;
+    margin-right: 10px;
+}
+
+.trainers-boxes .trainers-box ul li a:hover {
+    color: #ff2e63;
+}
+
+/*section :contact*/
+#contact {
+    display: flex;
+}
+
+.contact-us,
+.map
+  {
+ flex: 1;
+}
+
+.contact-us input,
+.contact-us textarea{
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    margin-bottom: 1rem;
+    outline:none ;
+}
+.form-group{
+    display: flex;
+   
+
+}
+.contact-us .form-group input[type="text"]{
+    margin-right: 0.75rem;
 }
