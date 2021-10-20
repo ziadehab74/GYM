@@ -129,7 +129,7 @@ a {
     border-radius: 5px;
 }
 
-/*showcase*/
+/* section : showcase*/
 #showcase {
     background: #252A34 url(../img/showcase.jpg) no-repeat center center/cover;
     height: 100vh;
@@ -148,7 +148,7 @@ a {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/*about*/
+/*section : about*/
 .about-content {
     display: flex;
     align-items: center;
@@ -167,7 +167,7 @@ a {
     border: 5px solid #fff;
 }
 
-/*section CTA*/
+/*section:  CTA*/
 #cta {
     background: url(../img/cta.jpg) no-repeat center center/cover;
     color: #fff;
@@ -262,4 +262,7 @@ a {
 }
 .form-group{
     display: flex;
+}
+.form-group type["text"]{
+    padding-right:1.5rem ;
 }
